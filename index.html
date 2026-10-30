@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultor - Escuela de Manejo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contenedor Principal del Chat -->
+    <main class="app-container">
+        <!-- Encabezado de la interfaz -->
+        <header class="chat-header">
+            <div class="header-info">
+                <div class="avatar-agent">🚗</div>
+                <div>
+                    <h1>Consultor de Escuela de Manejo</h1>
+                    <span class="status-indicator">En línea</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Zona de Chat (Boceto) -->
+        <section class="zona-de-chat" id="zona-de-chat">
+            <div class="message message-bot">
+                <div class="bubble">
+                    ¡Hola! 👋 Soy tu consultor de la Escuela de Manejo. ¿En qué puedo ayudarte hoy? Puedo resolver tus dudas sobre requisitos de licencias, clases prácticas o trámites.
+                </div>
+            </div>
+        </section>
+
+        <!-- Zona de Escritura (Boceto) -->
+        <footer class="zona-de-escritura">
+            <form id="chat-form" class="input-form">
+                <textarea 
+                    id="user-input" 
+                    placeholder="Escribí tu consulta sobre el trámite o licencia..." 
+                    rows="1" 
+                    required></textarea>
+                <button type="submit" id="send-btn" aria-label="Enviar mensaje">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </form>
+        </footer>
+    </main>
+
+    <!-- Archivos de Configuración y Lógica -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
